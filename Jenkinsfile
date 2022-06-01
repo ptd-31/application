@@ -15,9 +15,10 @@ pipeline {
           }
       }
       steps {
-        sh "sudo apt install nodejs npm -y"
-        sh "node -v"
-        sh "npm -v"
+        sh echo "SUCCESSFUL"
+//        sh "sudo apt install nodejs npm -y"
+//        sh "node -v"
+//        sh "npm -v"
       }
     }
 
