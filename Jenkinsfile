@@ -3,7 +3,7 @@ pipeline {
   agent none
 
   environment {
-    DOCKER_IMAGE = "ptd31/application-docker"
+    DOCKER_IMAGE = "ptd31/my-app"
   }
 
   stages {
@@ -15,10 +15,9 @@ pipeline {
           }
       }
       steps {
-        sh echo "SUCCESSFUL"
-//        sh "sudo apt install nodejs npm -y"
-//        sh "node -v"
-//        sh "npm -v"
+        sh "apt install nodejs npm -y"
+        sh "node -v"
+        sh "npm -v"
       }
     }
 
