@@ -10,7 +10,7 @@ pipeline {
     stage("Test") {
       agent {
           docker {
-            image 'nodejs:test'
+            image 'debian'
             args '-u 0:0'
           }
       }
