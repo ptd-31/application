@@ -18,6 +18,7 @@ pipeline {
         sh "apt install nodejs npm -y"
         sh "node -v"
         sh "npm -v"
+        sh "echo success"
       }
     }
 
